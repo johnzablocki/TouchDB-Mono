@@ -41,6 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TDAttachment.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="TouchDBVersion.cs" />
   </ItemGroup>
   <ItemGroup />
