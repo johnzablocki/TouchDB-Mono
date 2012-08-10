@@ -41,13 +41,52 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TDAttachment.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="Replicator\Changetracker\TDChangeTracker.cs" />
+    <Compile Include="Replicator\Changetracker\TDChangeTrackerClient.cs" />
+    <Compile Include="Replicator\TDPuller.cs" />
+    <Compile Include="Replicator\TDPusher.cs" />
+    <Compile Include="Replicator\TDReplicator.cs" />
+    <Compile Include="Router\TDRouter.cs" />
+    <Compile Include="Router\TDRouterCallbackBlock.cs" />
+    <Compile Include="Router\TDURLConnection.cs" />
+    <Compile Include="Router\TDURLHandler.cs" />
+    <Compile Include="Router\TDURLStreamHandlerFactory.cs" />
+    <Compile Include="Support\Base64.cs" />
+    <Compile Include="Support\FileDirUtils.cs" />
+    <Compile Include="Support\HttpClientFactory.cs" />
+    <Compile Include="Support\TDBatcher.cs" />
+    <Compile Include="Support\TDBatchProcessor.cs" />
+    <Compile Include="Support\TDRemoteRequest.cs" />
+    <Compile Include="Support\TDRemoteRequestCompletionBlock.cs" />
+    <Compile Include="TDAttachment.cs" />
     <Compile Include="TDBlobKey.cs" />
+    <Compile Include="TDBlobStore.cs" />
+    <Compile Include="TDBody.cs" />
+    <Compile Include="TDChangesOptions.cs" />
+    <Compile Include="TDCollateJSON.cs" />
+    <Compile Include="TDDatabase.cs" />
+    <Compile Include="TDFilterBlock.cs" />
+    <Compile Include="TDMisc.cs" />
+    <Compile Include="TDQueryOptions.cs" />
+    <Compile Include="TDRevision.cs" />
+    <Compile Include="TDRevisionList.cs" />
+    <Compile Include="TDServer.cs" />
+    <Compile Include="TDStatus.cs" />
+    <Compile Include="TDValidationBlock.cs" />
+    <Compile Include="TDValidationContext.cs" />
+    <Compile Include="TDView.cs" />
+    <Compile Include="TDViewCompiler.cs" />
+    <Compile Include="TDViewMapBlock.cs" />
+    <Compile Include="TDViewMapEmitBlock.cs" />
+    <Compile Include="TDViewReduceBlock.cs" />
     <Compile Include="TouchDBVersion.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Sharpen\Sharpen.csproj">
+      <Project>{72944A6C-45FF-4EF8-B349-8C9CABF519D4}</Project>
+      <Name>Sharpen</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

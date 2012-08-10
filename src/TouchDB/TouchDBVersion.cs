@@ -1,7 +1,7 @@
-﻿/**
- * Original iOS version by Jens Alfke
- * Java port by Marty Schoch
- * Ported to C# by John Zablocki
+/**
+ * Original iOS version by  Jens Alfke
+ * Ported Android version by Marty Schoch
+ * C# Port by John Zablocki
  *
  * Copyright (c) 2012 Couchbase, Inc. All rights reserved.
  *
@@ -16,15 +16,13 @@
  * and limitations under the License.
  */
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using Couchbase.TouchDB;
+using Sharpen;
 
-namespace TouchDB
+namespace Couchbase.TouchDB
 {
-	public static class TouchDBVersion
+	public abstract class TouchDBVersion
 	{
-		public const string TouchDBVersionNumber = "0.1";
+		public const string TouchDBVersionNumber = "0.4";
 	}
 }

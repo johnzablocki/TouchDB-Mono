@@ -16,45 +16,17 @@
  * and limitations under the License.
  */
 
-using System.IO;
+using Couchbase.TouchDB;
 using Sharpen;
 
 namespace Couchbase.TouchDB
 {
-	public class TDAttachment
+	/// <summary>Validation block, used to approve revisions being added to the database.
+	/// 	</summary>
+	/// <remarks>Validation block, used to approve revisions being added to the database.
+	/// 	</remarks>
+	public interface TDValidationBlock
 	{
-		private InputStream contentStream;
-
-		private string contentType;
-
-		public TDAttachment()
-		{
-		}
-
-		public TDAttachment(InputStream contentStream, string contentType)
-		{
-			this.contentStream = contentStream;
-			this.contentType = contentType;
-		}
-
-		public virtual InputStream GetContentStream()
-		{
-			return contentStream;
-		}
-
-		public virtual void SetContentStream(InputStream contentStream)
-		{
-			this.contentStream = contentStream;
-		}
-
-		public virtual string GetContentType()
-		{
-			return contentType;
-		}
-
-		public virtual void SetContentType(string contentType)
-		{
-			this.contentType = contentType;
-		}
+		bool Validate(TDRevision newRevision, TDValidationContext context);
 	}
 }

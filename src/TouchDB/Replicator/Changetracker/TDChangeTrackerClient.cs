@@ -16,45 +16,17 @@
  * and limitations under the License.
  */
 
-using System.IO;
+using System.Collections.Generic;
+using Couchbase.TouchDB.Replicator.Changetracker;
+using Couchbase.TouchDB.Support;
 using Sharpen;
 
-namespace Couchbase.TouchDB
+namespace Couchbase.TouchDB.Replicator.Changetracker
 {
-	public class TDAttachment
+	public interface TDChangeTrackerClient : HttpClientFactory
 	{
-		private InputStream contentStream;
+		void ChangeTrackerReceivedChange(IDictionary<string, object> change);
 
-		private string contentType;
-
-		public TDAttachment()
-		{
-		}
-
-		public TDAttachment(InputStream contentStream, string contentType)
-		{
-			this.contentStream = contentStream;
-			this.contentType = contentType;
-		}
-
-		public virtual InputStream GetContentStream()
-		{
-			return contentStream;
-		}
-
-		public virtual void SetContentStream(InputStream contentStream)
-		{
-			this.contentStream = contentStream;
-		}
-
-		public virtual string GetContentType()
-		{
-			return contentType;
-		}
-
-		public virtual void SetContentType(string contentType)
-		{
-			this.contentType = contentType;
-		}
+		void ChangeTrackerStopped(TDChangeTracker tracker);
 	}
 }

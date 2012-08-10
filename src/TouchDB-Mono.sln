@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouchDB", "TouchDB\TouchDB.csproj", "{45B747DE-09E8-49DD-A8B5-7539D1CFB86B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharpen", "Sharpen\Sharpen.csproj", "{72944A6C-45FF-4EF8-B349-8C9CABF519D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{45B747DE-09E8-49DD-A8B5-7539D1CFB86B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45B747DE-09E8-49DD-A8B5-7539D1CFB86B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45B747DE-09E8-49DD-A8B5-7539D1CFB86B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72944A6C-45FF-4EF8-B349-8C9CABF519D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72944A6C-45FF-4EF8-B349-8C9CABF519D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72944A6C-45FF-4EF8-B349-8C9CABF519D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72944A6C-45FF-4EF8-B349-8C9CABF519D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

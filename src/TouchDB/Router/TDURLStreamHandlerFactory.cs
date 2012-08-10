@@ -16,45 +16,36 @@
  * and limitations under the License.
  */
 
-using System.IO;
+using System;
+using Couchbase.TouchDB.Router;
 using Sharpen;
 
-namespace Couchbase.TouchDB
+namespace Couchbase.TouchDB.Router
 {
-	public class TDAttachment
+	public class TDURLStreamHandlerFactory : URLStreamHandlerFactory
 	{
-		private InputStream contentStream;
+		public static readonly string SCHEME = "touchdb";
 
-		private string contentType;
-
-		public TDAttachment()
+		public virtual URLStreamHandler CreateURLStreamHandler(string protocol)
 		{
+			if (SCHEME.Equals(protocol))
+			{
+				return new TDURLHandler();
+			}
+			return null;
 		}
 
-		public TDAttachment(InputStream contentStream, string contentType)
+		public static void RegisterSelfIgnoreError()
 		{
-			this.contentStream = contentStream;
-			this.contentType = contentType;
+			try
+			{
+				Uri.SetURLStreamHandlerFactory(new TDURLStreamHandlerFactory());
+			}
+			catch (Error)
+			{
+			}
 		}
-
-		public virtual InputStream GetContentStream()
-		{
-			return contentStream;
-		}
-
-		public virtual void SetContentStream(InputStream contentStream)
-		{
-			this.contentStream = contentStream;
-		}
-
-		public virtual string GetContentType()
-		{
-			return contentType;
-		}
-
-		public virtual void SetContentType(string contentType)
-		{
-			this.contentType = contentType;
-		}
+		//usually you should never catch an Error
+		//but I can't see how to avoid this
 	}
 }

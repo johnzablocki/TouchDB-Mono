@@ -16,45 +16,20 @@
  * and limitations under the License.
  */
 
-using System.IO;
+using System.Collections.Generic;
+using Couchbase.TouchDB;
 using Sharpen;
 
 namespace Couchbase.TouchDB
 {
-	public class TDAttachment
+	/// <summary>Block container for the map callback function</summary>
+	public interface TDViewMapBlock
 	{
-		private InputStream contentStream;
-
-		private string contentType;
-
-		public TDAttachment()
-		{
-		}
-
-		public TDAttachment(InputStream contentStream, string contentType)
-		{
-			this.contentStream = contentStream;
-			this.contentType = contentType;
-		}
-
-		public virtual InputStream GetContentStream()
-		{
-			return contentStream;
-		}
-
-		public virtual void SetContentStream(InputStream contentStream)
-		{
-			this.contentStream = contentStream;
-		}
-
-		public virtual string GetContentType()
-		{
-			return contentType;
-		}
-
-		public virtual void SetContentType(string contentType)
-		{
-			this.contentType = contentType;
-		}
+		/// <summary>A "map" function called when a document is to be added to a view.</summary>
+		/// <remarks>A "map" function called when a document is to be added to a view.</remarks>
+		/// <param name="document">The contents of the document being analyzed.</param>
+		/// <param name="emitter">A block to be called to add a key/value pair to the view. Your block can call it zero, one or multiple times.
+		/// 	</param>
+		void Map(IDictionary<string, object> document, TDViewMapEmitBlock emitter);
 	}
 }

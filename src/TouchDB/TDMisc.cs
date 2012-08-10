@@ -17,33 +17,35 @@
  */
 
 using System.Text;
+using Android.Util;
+using Couchbase.TouchDB;
 using Sharpen;
 
 namespace Couchbase.TouchDB
 {
-	/// <summary>Key identifying a data blob.</summary>
-	/// <remarks>Key identifying a data blob. This happens to be a SHA-1 digest.</remarks>
-	public class TDBlobKey
+	public class TDMisc
 	{
-		private byte[] bytes;
-
-		public TDBlobKey()
+		public static string TDCreateUUID()
 		{
+			return UUID.RandomUUID().ToString();
 		}
 
-		public TDBlobKey(byte[] bytes)
+		public static string TDHexSHA1Digest(byte[] input)
 		{
-			this.bytes = bytes;
-		}
-
-		public virtual void SetBytes(byte[] bytes)
-		{
-			this.bytes = bytes;
-		}
-
-		public virtual byte[] GetBytes()
-		{
-			return bytes;
+			MessageDigest md;
+			try
+			{
+				md = MessageDigest.GetInstance("SHA-1");
+			}
+			catch (NoSuchAlgorithmException)
+			{
+				Log.E(TDDatabase.TAG, "Error, SHA-1 digest is unavailable.");
+				return null;
+			}
+			byte[] sha1hash = new byte[40];
+			md.Update(input, 0, input.Length);
+			sha1hash = md.Digest();
+			return ConvertToHex(sha1hash);
 		}
 
 		public static string ConvertToHex(byte[] data)
@@ -70,36 +72,10 @@ namespace Couchbase.TouchDB
 			return buf.ToString();
 		}
 
-		public static byte[] ConvertFromHex(string s)
+		public static int TDSequenceCompare(long a, long b)
 		{
-			int len = s.Length;
-			byte[] data = new byte[len / 2];
-			for (int i = 0; i < len; i += 2)
-			{
-				data[i / 2] = unchecked((byte)((char.Digit(s[i], 16) << 4) + char.Digit(s[i + 1], 
-					16)));
-			}
-			return data;
-		}
-
-		public override bool Equals(object o)
-		{
-			if (!(o is Couchbase.TouchDB.TDBlobKey))
-			{
-				return false;
-			}
-			Couchbase.TouchDB.TDBlobKey oBlobKey = (Couchbase.TouchDB.TDBlobKey)o;
-			return Arrays.Equals(GetBytes(), oBlobKey.GetBytes());
-		}
-
-		public override int GetHashCode()
-		{
-			return Arrays.HashCode(bytes);
-		}
-
-		public override string ToString()
-		{
-			return Couchbase.TouchDB.TDBlobKey.ConvertToHex(bytes);
+			long diff = a - b;
+			return diff > 0 ? 1 : (diff < 0 ? -1 : 0);
 		}
 	}
 }

@@ -16,45 +16,19 @@
  * and limitations under the License.
  */
 
-using System.IO;
+using Couchbase.TouchDB;
 using Sharpen;
 
 namespace Couchbase.TouchDB
 {
-	public class TDAttachment
+	/// <summary>An external object that knows how to map source code of some sort into executable functions.
+	/// 	</summary>
+	/// <remarks>An external object that knows how to map source code of some sort into executable functions.
+	/// 	</remarks>
+	public interface TDViewCompiler
 	{
-		private InputStream contentStream;
+		TDViewMapBlock CompileMapFunction(string mapSource, string language);
 
-		private string contentType;
-
-		public TDAttachment()
-		{
-		}
-
-		public TDAttachment(InputStream contentStream, string contentType)
-		{
-			this.contentStream = contentStream;
-			this.contentType = contentType;
-		}
-
-		public virtual InputStream GetContentStream()
-		{
-			return contentStream;
-		}
-
-		public virtual void SetContentStream(InputStream contentStream)
-		{
-			this.contentStream = contentStream;
-		}
-
-		public virtual string GetContentType()
-		{
-			return contentType;
-		}
-
-		public virtual void SetContentType(string contentType)
-		{
-			this.contentType = contentType;
-		}
+		TDViewReduceBlock CompileReduceFunction(string reduceSource, string language);
 	}
 }

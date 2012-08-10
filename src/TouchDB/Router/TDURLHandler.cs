@@ -16,45 +16,18 @@
  * and limitations under the License.
  */
 
-using System.IO;
+using System;
+using Couchbase.TouchDB.Router;
 using Sharpen;
 
-namespace Couchbase.TouchDB
+namespace Couchbase.TouchDB.Router
 {
-	public class TDAttachment
+	public class TDURLHandler : URLStreamHandler
 	{
-		private InputStream contentStream;
-
-		private string contentType;
-
-		public TDAttachment()
+		/// <exception cref="System.IO.IOException"></exception>
+		protected override URLConnection OpenConnection(Uri u)
 		{
-		}
-
-		public TDAttachment(InputStream contentStream, string contentType)
-		{
-			this.contentStream = contentStream;
-			this.contentType = contentType;
-		}
-
-		public virtual InputStream GetContentStream()
-		{
-			return contentStream;
-		}
-
-		public virtual void SetContentStream(InputStream contentStream)
-		{
-			this.contentStream = contentStream;
-		}
-
-		public virtual string GetContentType()
-		{
-			return contentType;
-		}
-
-		public virtual void SetContentType(string contentType)
-		{
-			this.contentType = contentType;
+			return new TDURLConnection(u);
 		}
 	}
 }
