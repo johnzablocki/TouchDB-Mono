@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouchDB-Mono", "TouchDB-Mono\TouchDB-Mono.csproj", "{62636203-3C6A-4F19-9545-00324BFBF05E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouchDB-Mono.Android", "TouchDB-Mono.Android\TouchDB-Mono.Android.csproj", "{B143DD76-70FC-4667-90FD-924061A90538}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouchDB-Mono.Tests", "TouchDB-Mono.Tests\TouchDB-Mono.Tests.csproj", "{74D5D33E-D965-4984-9F85-FF9B2A6CBB78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62636203-3C6A-4F19-9545-00324BFBF05E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62636203-3C6A-4F19-9545-00324BFBF05E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62636203-3C6A-4F19-9545-00324BFBF05E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62636203-3C6A-4F19-9545-00324BFBF05E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B143DD76-70FC-4667-90FD-924061A90538}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B143DD76-70FC-4667-90FD-924061A90538}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B143DD76-70FC-4667-90FD-924061A90538}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B143DD76-70FC-4667-90FD-924061A90538}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74D5D33E-D965-4984-9F85-FF9B2A6CBB78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74D5D33E-D965-4984-9F85-FF9B2A6CBB78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74D5D33E-D965-4984-9F85-FF9B2A6CBB78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74D5D33E-D965-4984-9F85-FF9B2A6CBB78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
