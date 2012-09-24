@@ -33,20 +33,63 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.9\lib\sl4-windowsphone71\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\TouchDB-Mono\ITDValidationContext.cs">
+      <Link>ITDValidationContext.cs</Link>
+    </Compile>
+    <Compile Include="..\TouchDB-Mono\ITDViewCompiler.cs">
+      <Link>ITDViewCompiler.cs</Link>
+    </Compile>
+    <Compile Include="..\TouchDB-Mono\ITDViewMapBlock.cs">
+      <Link>ITDViewMapBlock.cs</Link>
+    </Compile>
+    <Compile Include="..\TouchDB-Mono\ITDViewMapEmitBlock.cs">
+      <Link>ITDViewMapEmitBlock.cs</Link>
+    </Compile>
+    <Compile Include="..\TouchDB-Mono\ITDViewReduceBlock.cs">
+      <Link>ITDViewReduceBlock.cs</Link>
+    </Compile>
+    <Compile Include="..\TouchDB-Mono\Support\IHttpClientFactory.cs">
+      <Link>Support\IHttpClientFactory.cs</Link>
+    </Compile>
     <Compile Include="..\TouchDB-Mono\TDAttachment.cs">
       <Link>TDAttachment.cs</Link>
     </Compile>
     <Compile Include="..\TouchDB-Mono\TDBlobKey.cs">
       <Link>TDBlobKey.cs</Link>
     </Compile>
+    <Compile Include="..\TouchDB-Mono\TDBody.cs">
+      <Link>TDBody.cs</Link>
+    </Compile>
+    <Compile Include="..\TouchDB-Mono\TDBody`1.cs">
+      <Link>TDBody`1.cs</Link>
+    </Compile>
+    <Compile Include="..\TouchDB-Mono\TDDatabase.cs">
+      <Link>TDDatabase.cs</Link>
+    </Compile>
+    <Compile Include="..\TouchDB-Mono\TDRevision.cs">
+      <Link>TDRevision.cs</Link>
+    </Compile>
+    <Compile Include="..\TouchDB-Mono\TDServer.cs">
+      <Link>TDServer.cs</Link>
+    </Compile>
+    <Compile Include="..\TouchDB-Mono\TDStatus.cs">
+      <Link>TDStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\TouchDB-Mono\TouchDBVersion.cs">
+      <Link>TouchDBVersion.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
