@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{431AEF52-7D1C-4BF7-A292-3CE486188B58}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TouchDB_Mono.WindowsPhone</RootNamespace>
+    <AssemblyName>TouchDB-Mono.WindowsPhone</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Net" />
+    <Reference Include="mscorlib.extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\TouchDB-Mono\ITDValidationContext.cs">
+      <Link>ITDValidationContext.cs</Link>
+    </Compile>
+    <Compile Include="..\TouchDB-Mono\ITDViewCompiler.cs">
+      <Link>ITDViewCompiler.cs</Link>
+    </Compile>
+    <Compile Include="..\TouchDB-Mono\ITDViewMapBlock.cs">
+      <Link>ITDViewMapBlock.cs</Link>
+    </Compile>
+    <Compile Include="..\TouchDB-Mono\ITDViewMapEmitBlock.cs">
+      <Link>ITDViewMapEmitBlock.cs</Link>
+    </Compile>
+    <Compile Include="..\TouchDB-Mono\ITDViewReduceBlock.cs">
+      <Link>ITDViewReduceBlock.cs</Link>
+    </Compile>
+    <Compile Include="..\TouchDB-Mono\Support\IHttpClientFactory.cs">
+      <Link>Support\IHttpClientFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\TouchDB-Mono\TDAttachment.cs">
+      <Link>TDAttachment.cs</Link>
+    </Compile>
+    <Compile Include="..\TouchDB-Mono\TDBlobKey.cs">
+      <Link>TDBlobKey.cs</Link>
+    </Compile>
+    <Compile Include="..\TouchDB-Mono\TDBody.cs">
+      <Link>TDBody.cs</Link>
+    </Compile>
+    <Compile Include="..\TouchDB-Mono\TDBody`1.cs">
+      <Link>TDBody`1.cs</Link>
+    </Compile>
+    <Compile Include="..\TouchDB-Mono\TDDatabase.cs">
+      <Link>TDDatabase.cs</Link>
+    </Compile>
+    <Compile Include="..\TouchDB-Mono\TDRevision.cs">
+      <Link>TDRevision.cs</Link>
+    </Compile>
+    <Compile Include="..\TouchDB-Mono\TDServer.cs">
+      <Link>TDServer.cs</Link>
+    </Compile>
+    <Compile Include="..\TouchDB-Mono\TDStatus.cs">
+      <Link>TDStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\TouchDB-Mono\TouchDBVersion.cs">
+      <Link>TouchDBVersion.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <ProjectExtensions />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
