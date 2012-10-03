@@ -58,6 +58,7 @@
     <Compile Include="TDChangeOptions.cs" />
     <Compile Include="TDCollateJson.cs" />
     <Compile Include="TDDatabase.cs" />
+    <Compile Include="TDMisc.cs" />
     <Compile Include="TDRevision.cs" />
     <Compile Include="TDServer.cs" />
     <Compile Include="TDStatus.cs" />

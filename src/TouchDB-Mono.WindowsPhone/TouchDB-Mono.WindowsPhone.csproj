@@ -97,6 +97,9 @@
     <Compile Include="..\TouchDB-Mono\TDDatabase.cs">
       <Link>TDDatabase.cs</Link>
     </Compile>
+    <Compile Include="..\TouchDB-Mono\TDMisc.cs">
+      <Link>TDMisc.cs</Link>
+    </Compile>
     <Compile Include="..\TouchDB-Mono\TDRevision.cs">
       <Link>TDRevision.cs</Link>
     </Compile>
