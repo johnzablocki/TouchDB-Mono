@@ -49,6 +49,9 @@
     <Reference Include="mscorlib.extensions" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\TouchDB-Mono\Enums.cs">
+      <Link>Enums.cs</Link>
+    </Compile>
     <Compile Include="..\TouchDB-Mono\ITDValidationContext.cs">
       <Link>ITDValidationContext.cs</Link>
     </Compile>
@@ -81,6 +84,9 @@
     </Compile>
     <Compile Include="..\TouchDB-Mono\TDBody`1.cs">
       <Link>TDBody`1.cs</Link>
+    </Compile>
+    <Compile Include="..\TouchDB-Mono\TDChangeOptions.cs">
+      <Link>TDChangeOptions.cs</Link>
     </Compile>
     <Compile Include="..\TouchDB-Mono\TDDatabase.cs">
       <Link>TDDatabase.cs</Link>

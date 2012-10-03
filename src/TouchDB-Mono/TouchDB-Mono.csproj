@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums.cs" />
     <Compile Include="Support\IHttpClientFactory.cs" />
     <Compile Include="Support\ITDRemoteRequestCompletionBlock.cs" />
     <Compile Include="TDBlobStore.cs" />
@@ -53,6 +54,7 @@
     <Compile Include="ITDViewMapEmitBlock.cs" />
     <Compile Include="ITDViewReduceBlock.cs" />
     <Compile Include="TDBody.cs" />
+    <Compile Include="TDChangeOptions.cs" />
     <Compile Include="TDDatabase.cs" />
     <Compile Include="TDRevision.cs" />
     <Compile Include="TDServer.cs" />
