@@ -26,21 +26,18 @@ namespace TouchDB.Mono
 {
 	public class TDAttachment
 	{
-		private Stream _contentStream;
-		private string _contentType;
-
 		public TDAttachment()
 		{
 		}
 
 		public TDAttachment(Stream contentStream, string contentType)
 		{
-			_contentStream = contentStream;
-			_contentType = contentType;
+			ContentStream = contentStream;
+			ContentType = contentType;
 		}
 
 		public Stream ContentStream { get; set; }
 
-		public string MyProperty { get; set; }
+		public string ContentType { get; set; }
 	}
 }
