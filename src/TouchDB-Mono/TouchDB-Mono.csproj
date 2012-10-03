@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Support\IHttpClientFactory.cs" />
     <Compile Include="Support\ITDRemoteRequestCompletionBlock.cs" />
+    <Compile Include="TDBlobStore.cs" />
     <Compile Include="TDBody`1.cs" />
     <Compile Include="ITDValidationContext.cs" />
     <Compile Include="ITDViewCompiler.cs" />

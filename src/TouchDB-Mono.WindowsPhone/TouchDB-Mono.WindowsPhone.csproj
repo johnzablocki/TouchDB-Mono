@@ -73,6 +73,9 @@
     <Compile Include="..\TouchDB-Mono\TDBlobKey.cs">
       <Link>TDBlobKey.cs</Link>
     </Compile>
+    <Compile Include="..\TouchDB-Mono\TDBlobStore.cs">
+      <Link>TDBlobStore.cs</Link>
+    </Compile>
     <Compile Include="..\TouchDB-Mono\TDBody.cs">
       <Link>TDBody.cs</Link>
     </Compile>
