@@ -49,6 +49,16 @@ namespace TouchDB.Mono
 			Object = array;
 		}
 
+        public IDictionary<string, object> Properties 
+        {
+            get { return Object as IDictionary<string, object>; }
+        }
+
+        public object GetPropertyForKey(string key)
+        {
+            throw new NotImplementedException();
+        }
+
 		public bool IsValidJson
 		{
 			get
@@ -82,9 +92,6 @@ namespace TouchDB.Mono
 			var result = new TDBody<T>(json);
 			return result;
 		}
-
-
-
 
 	}
 }
