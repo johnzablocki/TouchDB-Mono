@@ -39,7 +39,7 @@ namespace TouchDB.Mono
 			Json = json;
 		}
 
-		public TDBody(Dictionary<string, object> properties)
+		public TDBody(IDictionary<string, object> properties)
 		{
 			Object = properties;
 		}

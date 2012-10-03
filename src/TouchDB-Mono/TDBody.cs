@@ -31,8 +31,13 @@ namespace TouchDB.Mono
 	{
 		public TDBody(byte[] json) : base(json) { }
 
-		public TDBody(Dictionary<string, object> properties) : base(properties) { }
+		public TDBody(IDictionary<string, object> properties) : base(properties) { }
 		
 		public TDBody(IList<object> array) : base(array) { }
+
+        public object GetPropertyForKey(string key)
+        {
+            throw new NotImplementedException();
+        }
 	}
 }
