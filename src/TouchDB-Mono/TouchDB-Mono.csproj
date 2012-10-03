@@ -55,6 +55,7 @@
     <Compile Include="ITDViewReduceBlock.cs" />
     <Compile Include="TDBody.cs" />
     <Compile Include="TDChangeOptions.cs" />
+    <Compile Include="TDCollateJson.cs" />
     <Compile Include="TDDatabase.cs" />
     <Compile Include="TDRevision.cs" />
     <Compile Include="TDServer.cs" />

@@ -88,6 +88,9 @@
     <Compile Include="..\TouchDB-Mono\TDChangeOptions.cs">
       <Link>TDChangeOptions.cs</Link>
     </Compile>
+    <Compile Include="..\TouchDB-Mono\TDCollateJson.cs">
+      <Link>TDCollateJson.cs</Link>
+    </Compile>
     <Compile Include="..\TouchDB-Mono\TDDatabase.cs">
       <Link>TDDatabase.cs</Link>
     </Compile>
