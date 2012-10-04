@@ -1,0 +1,13 @@
+D:\dev\TouchDB-Mono\src\TouchDB-Mono.Android\bin\Debug\TouchDB.Mono.Android.dll
+D:\dev\TouchDB-Mono\src\TouchDB-Mono.Android\bin\Debug\TouchDB.Mono.Android.pdb
+D:\dev\TouchDB-Mono\src\TouchDB-Mono.Android\bin\Debug\TouchDB.Mono.Android.dll.mdb
+D:\dev\TouchDB-Mono\src\TouchDB-Mono.Android\bin\Debug\TouchDB.Mono.Android.apk
+D:\dev\TouchDB-Mono\src\TouchDB-Mono.Android\bin\Debug\TouchDB.Mono.Android-Signed.apk
+D:\dev\TouchDB-Mono\src\TouchDB-Mono.Android\bin\Debug\Newtonsoft.Json.dll
+D:\dev\TouchDB-Mono\src\TouchDB-Mono.Android\bin\Debug\Newtonsoft.Json.xml
+D:\dev\TouchDB-Mono\src\TouchDB-Mono.Android\obj\Debug\ResolveAssemblyReference.cache
+D:\dev\TouchDB-Mono\src\TouchDB-Mono.Android\obj\Debug\TouchDB.Mono.Android.dll
+D:\dev\TouchDB-Mono\src\TouchDB-Mono.Android\obj\Debug\TouchDB.Mono.Android.pdb
+D:\dev\TouchDB-Mono\src\TouchDB-Mono.Android\obj\Debug\android\bin\TouchDB.Mono.Android.apk
+D:\dev\TouchDB-Mono\src\TouchDB-Mono.Android\obj\Debug\R.cs.flag
+D:\dev\TouchDB-Mono\src\TouchDB-Mono.Android\obj\Debug\uploadflags.txt

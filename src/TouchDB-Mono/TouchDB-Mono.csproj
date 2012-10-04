@@ -60,6 +60,7 @@
     <Compile Include="TDDatabase.cs" />
     <Compile Include="TDMisc.cs" />
     <Compile Include="TDRevision.cs" />
+    <Compile Include="TDRevisionList.cs" />
     <Compile Include="TDServer.cs" />
     <Compile Include="TDStatus.cs" />
     <Compile Include="TouchDBVersion.cs" />

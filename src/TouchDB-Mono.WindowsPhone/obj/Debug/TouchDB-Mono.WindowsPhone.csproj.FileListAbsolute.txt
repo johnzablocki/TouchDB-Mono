@@ -1,0 +1,5 @@
+D:\dev\TouchDB-Mono\src\TouchDB-Mono.WindowsPhone\Bin\Debug\TouchDB-Mono.WindowsPhone.dll
+D:\dev\TouchDB-Mono\src\TouchDB-Mono.WindowsPhone\Bin\Debug\TouchDB-Mono.WindowsPhone.pdb
+D:\dev\TouchDB-Mono\src\TouchDB-Mono.WindowsPhone\obj\Debug\ResolveAssemblyReference.cache
+D:\dev\TouchDB-Mono\src\TouchDB-Mono.WindowsPhone\obj\Debug\TouchDB-Mono.WindowsPhone.dll
+D:\dev\TouchDB-Mono\src\TouchDB-Mono.WindowsPhone\obj\Debug\TouchDB-Mono.WindowsPhone.pdb
