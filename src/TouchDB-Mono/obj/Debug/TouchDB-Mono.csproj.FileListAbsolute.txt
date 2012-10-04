@@ -1,5 +1,0 @@
-D:\dev\TouchDB-Mono\src\TouchDB-Mono\bin\Debug\TouchDB.Mono.dll
-D:\dev\TouchDB-Mono\src\TouchDB-Mono\bin\Debug\TouchDB.Mono.pdb
-D:\dev\TouchDB-Mono\src\TouchDB-Mono\obj\Debug\ResolveAssemblyReference.cache
-D:\dev\TouchDB-Mono\src\TouchDB-Mono\obj\Debug\TouchDB.Mono.dll
-D:\dev\TouchDB-Mono\src\TouchDB-Mono\obj\Debug\TouchDB.Mono.pdb
