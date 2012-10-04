@@ -55,6 +55,9 @@
     <Compile Include="..\TouchDB-Mono\ITDFilterBlock.cs">
       <Link>ITDFilterBlock.cs</Link>
     </Compile>
+    <Compile Include="..\TouchDB-Mono\ITDValidationBlock.cs">
+      <Link>ITDValidationBlock.cs</Link>
+    </Compile>
     <Compile Include="..\TouchDB-Mono\ITDValidationContext.cs">
       <Link>ITDValidationContext.cs</Link>
     </Compile>
