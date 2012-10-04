@@ -25,6 +25,12 @@ namespace TouchDB.Mono
 {
 	public class TDDatabase
 	{
+        public bool Exists { get; set; }
 
+        public string Name { get; set; }
+
+        public void Delete() 
+        { 
+        }
 	}
 }
